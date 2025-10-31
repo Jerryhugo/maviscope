@@ -1,0 +1,1032 @@
+:root {
+    --blue-primary: #011440;
+    --off-red: #FF8383;
+    --lighter-blue: #EEF7EF;
+    --dark-text-color: #ffffffbb;
+    --darker-text-color: rgb(29, 29, 29);
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    z-index: 9999;
+    width: 200px;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Saira", sans-serif; 
+}
+
+h6 {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+.logo img {
+    width: 70px;
+}
+
+
+
+.login-logo {
+    width: 70px;
+    
+}
+.laptop-nav {
+    display: none;
+}
+
+.swipper-slide {
+    height: 100vh !important;
+}
+
+.hallow {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 is 50% transparent */
+}
+
+
+
+.hero-cover {
+    background: url("../img/index-hero.jpg") no-repeat center center/cover;
+}
+
+.hero-cover2 {
+    background: url("../img/surgery.jpg") no-repeat center center/cover;
+}
+
+.hero-cover3 {
+    background: url("../img/surgery-1.jpg") no-repeat center center/cover;
+}
+
+.male-fertlity-cover {
+    background: url("../img/male-fertility.jpg") no-repeat center center/cover;
+}
+
+.female-fertlity-cover {
+     background: url("../img/female-fertility.jpg") no-repeat center center/cover;
+}
+
+.fertility-service-page-cover {
+     background: url("../img/fertility-service.jpg") no-repeat center center/cover;
+}
+
+
+#fertility-features {
+    background: url("../img/egg_sperm2.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.appointment-cover {
+    background: url("../img/female-booking.jpg") no-repeat center center/cover;
+}
+.services-cover2 {
+    background: url("../img/services.jpg") no-repeat center center/cover;
+}
+
+.ivf-cover {
+    background: url("../img/about-ivf-4.jpg") no-repeat center center/cover; 
+}
+
+.team-cover {
+    background: url("../img/team.jpg") no-repeat center center/cover; 
+}
+
+.testimony-cover {
+    background: url("../img/testimony.jpg") no-repeat center center/cover; 
+}
+
+.urology-cover {
+    background: url("../img/urology.jpg") no-repeat center center/cover; 
+}
+.construction {
+    position: relative;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    height: 60vh;
+    margin: 130px 20px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.hero {
+   
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    height: 60vh;
+    margin: 130px 20px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.cat-link {
+    position: relative;
+}
+
+.cat-link:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+.cat-title {
+    position: absolute;
+      top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-title {
+      margin-top: 130px !important;
+}
+
+.carousel-inner {
+   
+    transition: transform 0.5s ease-in-out;
+}
+
+/* .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    
+    transform: translateX(-50%);
+    display: flex;
+} */
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 20px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.activated {
+    background-color: var(--off-red);
+}
+
+
+
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.4); /* Dark overlay (adjust opacity for brightness) */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 15%;
+    z-index: 2;
+   
+    
+}
+
+.hero-content h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 10vw;
+}
+
+
+
+ul {
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px !important;
+    color: var(--blue-primary);
+}
+
+ul li a {
+    color: var(--blue-primary);
+    font-weight: 800;
+
+}
+
+ul li a:hover {
+    color: var(--off-red);
+}
+
+nav {
+    padding: 20px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    top:0;
+}
+
+.mobile-nav {
+    height: 100vh;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 50px 20px;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+    left: -1000px;
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav ul li {
+    list-style: none;
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 10px 0;
+}
+
+
+.mobile-nav ul {
+    margin: 50px 0;
+    padding: 0;
+}
+
+.mobile-nav i {
+    position: absolute;
+    right: 40px;
+    color: var(--blue-primary);
+}
+
+.close {
+    color: var(--off-red) !important;
+    top: 20px;
+    right: 20px !important;
+}
+
+.mobile-nav .socials {
+    margin-top: 50px;
+    
+}
+
+.socials a {
+    color: var(--blue-primary);
+}
+
+.btn-booking, .btn-booking-mini {
+    background-color: var(--off-red);
+    color: white;
+    font-weight: 500;
+    
+}
+
+.btn-booking-mini {
+    padding: 10px;
+}
+
+.btn-booking {
+     padding: 10px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* about us styling */
+
+#about {
+    background-color: var(--lighter-blue);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 90px 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about .design {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    width: 200px;
+}
+
+#about img {
+    width: 100%;
+    margin: 25px auto;
+    border-radius: 10px;
+    
+}
+
+#about h1 {
+    color: var(--blue-primary);
+    margin: 20px 0;
+}
+
+#about p {
+    color: rgb(36, 36, 36);
+}
+
+.desktop-text {
+    display: none;
+}
+
+.btn-blue, .btn-light-red {
+   
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 15px 0 20px;
+}
+
+.btn-blue {
+    background-color: var(--blue-primary);
+}
+
+.btn-light-red {
+    background-color: var(--off-red);
+}
+
+
+/* learn more about ivf section styling */
+#ivf-pricing {
+    background: url("../img/about-ivf-2.jpg") no-repeat center center/cover;
+}
+
+#ivf {
+    background: url("../img/thinking.jpg") no-repeat center center/cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ivf, #ivf-pricing {
+    padding: 50px 25px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#ivf h1, #ivf-pricing {
+    color: var(--blue-primary);
+}
+
+.desktop {
+    display: none;
+}
+
+.ivf-booking {
+    background-color: var(--lighter-blue);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px 20px;
+    position: relative;
+}
+
+.ivf-booking img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* our services section design */
+
+#services {
+    /* background-color: var(--lighter-blue); */
+    margin: 50px 0;
+   
+    padding: 50px 25px;
+}
+
+
+
+.services-cover {
+    background-color: var(--lighter-blue);
+    margin: 40px 0px;
+    padding: 40px 20px;
+  
+    border-radius: 10px;
+}
+
+.services-cover i {
+    color: black !important;
+}
+
+#services img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 30px;
+
+}
+
+#services h1 {
+    /* color: var(--blue-primary);
+    margin: 0 0 30px; */
+}
+
+
+/* testimonies styling begins   */
+
+#testimonies h1 {
+    margin: 0 0 0 20px ;
+    color: var(--blue-primary);
+}
+
+#testimonies h4, .ivf-process h4 {
+    color: var(--off-red);
+}
+
+.card-main {
+    /* margin: 40px 20px; */
+    background-color: var(--blue-primary);
+    /* background: linear-gradient(to right, #3674B5, #4A91D0, #5FADE6); */
+    /* text-align: center; */
+    color: var(--dark-text-color);
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+.card-main .img {
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+    border-radius: 50%;
+}
+
+ .curved-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+}
+
+#testimonies a {
+    margin: 20px;
+}
+
+/* form styling begins  */
+
+#form {
+    background-color: var(--lighter-blue);
+    margin-top: 100px !important;
+}
+
+form  {
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+form input, form select, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 10px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+}
+
+#form h1 {
+    color: var(--blue-primary);
+}
+
+#form img {
+    display: none;
+}
+
+/* team styling begins here */
+#all-team {
+    margin: 100px 20px;
+   
+}
+
+#all-team h1 {
+    color: var(--blue-primary);
+    margin: 50px 0;
+}
+
+.decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.member {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.team {
+    padding: 20px;
+}
+.team-inner {
+    padding: 40px 20px;
+    color: var(--dark-text-color);
+    border-radius: 10px;
+    background-color: var(--blue-primary);
+    position: relative;
+   
+  
+}
+
+
+
+.team h4 {
+    color: var(--dark-text-color);
+}
+
+/* blog design begins */
+
+.blog {
+    margin: 130px 20px;
+}
+
+#blog p {
+    color: var(--darker-text-color);
+}
+
+#blog {
+    
+    margin: 100px 20px;
+}
+
+.blog-item {
+    background-color: var(--lighter-blue);
+    border-radius: 10px;
+    padding:  40px 20px;
+}
+
+.blog-item img {
+    max-height: 285px;
+}
+
+.blog-item small {
+    margin: 50px 0;
+}
+
+#blog img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 285px;
+}
+
+/* footer styling begins */
+
+
+footer {
+    padding: 40px 20px;
+    color: var(--dark-text-color);
+    background-color: var(--blue-primary);
+}
+
+footer i {
+    margin-right: 7px;
+}
+
+footer a {
+    color: var(--dark-text-color) !important ;
+    
+}
+
+.google-map {
+    width: 100%;
+   margin: 40px 0;
+    height: 200px;
+ 
+}
+
+footer .link {
+    margin: 10px 0;
+}
+
+footer h5 {
+    color: var(--dark-text-color);
+}
+
+.active {
+    border: 1px solid var(--dark-text-color);
+    border-radius: 5px;
+}
+
+.inactive {
+    background-color: var(--dark-text-color);
+    color: rgb(34, 34, 34) !important;
+}
+
+
+/* about page design begins */
+.margin-adjust {
+    margin-bottom: 50px !important;
+}
+.about-cover {
+    background: url("../img/about-us-img.jpg") no-repeat center center/cover;
+}
+
+.wrap {
+    border: 1px solid var(--blue-primary);
+    padding: 20px;
+    margin: 20px;
+    height: 100%;
+    border-radius: 10px;
+    color: var(--darker-text-color);
+
+}
+
+.wrap b {
+    color: var(--off-red);
+}
+
+.wrap h1 {
+    color: var(--blue-primary);
+}
+
+.wrap span {
+    font-weight: bold;
+}
+
+.wrap i {
+    color: var(--off-red);
+}
+
+.wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* carousel styling begins here */
+
+.carousel-item {
+    position: relative;
+    background-color: var(--blue-primary);
+    padding: 20px;
+    margin: 60px 20px;
+  
+}
+
+.number {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--lighter-blue);
+    border-radius: 50%;
+    border: 1px solid var(--blue-primary);
+    color: var(--darker-text-color);
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+   
+}
+.color-red {
+    color: var(--off-red);
+}
+.number p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.carousel-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* 
+ong service page styling */
+
+.ong-cover {
+    background: url("../img/ong.jpg") no-repeat center center/cover;
+}
+
+
+/* nicu service page styling */
+.nicu-cover {
+    background: url("../img/nicu.jpg") no-repeat center center/cover;
+}
+
+/* cardiology service page styling */
+.cardiology-cover {
+    background: url("../img/Cardiology.jpg") no-repeat center center/cover;
+}
+
+.pediatrics-cover {
+    background: url("../img/pediatrics.jpg") no-repeat center center/cover;
+}
+
+.surgery-cover {
+    background: url("../img/surgery-1.jpg") no-repeat center center/cover;
+}
+
+.medicine-cover {
+    background: url("../img/medicine.jpg") no-repeat center center/cover;  
+}
+
+.radiology-cover {
+    background: url("../img/Radiology.jpg") no-repeat center center/cover;
+}
+
+.ophthalmology-cover {
+    background: url("../img/opthalmology.jpg") no-repeat center center/cover;
+}
+
+.emergency-cover {
+    background: url("../img/Emergency.jpg") no-repeat center center/cover;
+}
+
+.physiotherapy-cover {
+    background: url("../img/physiotherapy.jpg") no-repeat center center/cover;
+}
+.booking-form {
+    background-color: var(--lighter-blue);
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* blog page design */
+
+.blog {
+    margin: 130px 20px;
+}
+
+.article-container img {
+    height: 200px;
+}
+
+
+/* altered bootstrap */
+
+.nav-item {
+    margin: 0 !important;
+  }
+/* 
+  testimony */
+
+
+  #testimonial {
+    padding: 50px 20px;
+    background-color: var(--blue-primary);
+    position: relative;
+
+}
+
+/* .swiper {
+    width: 100%;
+} */
+
+.content img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(3, 3, 85);
+    
+    border-radius: 50%;
+ 
+}
+
+.content i {
+    opacity: 0.1;
+}
+
+.h-100 {
+    height: 100%;
+}
+#balls, #graph {
+    position: absolute;
+    opacity: 0.1;
+}
+#balls {
+    height: 100px;
+    width: 100px;
+    left: 0;
+    top: 0;
+   
+}
+
+#graph {
+    right: -10px;
+    bottom: 0;
+    width: 250px;
+    height: 250px;
+}
+
+/* #babies {
+    padding: 20px;
+} */
+#babies img {
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+}
+
+
+/* faq section */
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+.faq-question {
+    background: var(--blue-primary);
+    color: white;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #f1f1f1;
+    font-size: 16px;
+}
+.faq-question::after {
+    content: '+';
+    font-size: 20px;
+}
+.faq-question.active::after {
+    content: '-';
+}
+
+/* Gallery page styleing */
+
+
+
+@media screen and (min-width: 920px) {
+    .laptop-nav, .btn-booking {
+        display: block;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+   nav {
+  
+    padding: 20px 40px ;
+   }
+
+   .hero {
+    height: 100vh;
+    margin: 160px 20px;
+   }
+
+   .gallery-title {
+    margin-top: 160px !important;
+   }
+
+   .blog {
+    margin: 160px 20px !important;
+   }
+
+
+
+   .hero-content h1 {
+    font-size: 5vw;
+   }
+
+   .hero-content {
+    margin-left: 25px;
+   }
+
+   .hero-content p {
+    font-size: 1.5vw;
+    margin: 20px 0;
+   }
+   .hero-content a {
+    display: inline;
+  
+   }
+
+   .desktop {
+    display: block;
+   }
+
+   .mobile {
+    display: none;
+   }
+
+
+   #ivf {
+    background-position: 0 30%;
+    padding: 100px 20px;
+   }
+
+
+
+   /* navigation styling */
+   .mobile-nav {
+    display: none;
+   }
+
+
+   /* book appointment styling begins here */
+   #form img {
+    display: block;
+    width: 100%;
+    height: 100%;
+   }
+
+   /* about us section */
+   .desktop-text {
+    display: block;
+   }
+
+   .mobile-text {
+    display: none;
+   }
+
+   .booking-form {
+    width: 80%;
+   }
+
+   #testimonail {
+    padding: 100px 20px;
+   }
+
+   #balls {
+    width: 200px;
+    height: 200px;
+   }
+
+   #graph {
+    width: 500px;
+    height: 500px;
+   }
+
+   
+  }
+
+  /* Male fertility services page */
+
+    .service-icon {
+      font-size: 40px;
+      color: #007BFF;
+    }
+
+
+  /* @media screen and (max-width: 768px) {
+   h1 {
+    font-size: 1.5rem;
+   }
+  } */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
