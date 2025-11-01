@@ -443,7 +443,7 @@ $event = $stmt->fetch(PDO::FETCH_ASSOC);
                             FERTILITY CENTER to answer her prayers today she is a happy woman God bless you sir and your
                             team.</p>
                         <!-- <h6><b>Mrs. Stella Eboh</b></h6> -->
-                        <i class="fas fa-quote-right mt-3 fa-2x"></i>
+                        <i class="fas fa-quote-right mt-3 fa-2x"></i> 
 
                     </div>
 
