@@ -47,7 +47,7 @@
                 </div>
                 <!-- Repeat for more services -->
                 <div class="col-6" data-aos="fade-up" data-aos-duration="500">
-                    <a href="online-booking.php" class="text-secondary">
+                    <a href="online-booking-terms-and-condition.php" class="text-secondary">
                         <div class="  p-3 shadow d-flex justify-content-between align-items-center">
                             <div>
                                 <h5>Online appointment</h5>

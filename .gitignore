@@ -1,2 +1,4 @@
 node_modules
 js/payment.js
+verify.php
+payment.php
